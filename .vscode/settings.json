@@ -1,0 +1,10 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.validate": ["javascript"],
+  "cSpell.words": ["Existedvalue", "inital", "templatefile"],
+  "window.density.editorTabHeight": "compact",
+  "window.zoomLevel": 0,
+  "typescript.validate.enable": true
+}

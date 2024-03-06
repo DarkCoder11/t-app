@@ -1,0 +1,56 @@
+.container {
+  &__search {
+    @extend %flex-column;
+    gap: 14px;
+
+    &__title {
+      @extend %font-16-semibold;
+    }
+  }
+
+  &__list {
+    @extend %flex-column;
+    margin-top: 29px;
+
+    height: calc(100vh - 100px - 39px - 47px - 58px - 29px - 60px);
+
+    @include breakpoint(tablet) {
+      height: 135px;
+    }
+
+    &__scroll {
+      margin-top: 18px;
+    }
+
+    &__items {
+      @extend %flex-column;
+      gap: 18px;
+
+      @include breakpoint(tablet) {
+        padding-left: 0;
+        gap: 5px;
+      }
+
+      &__more {
+        @extend %flex-center;
+
+        button {
+          max-width: 100px;
+          margin-block: 10px;
+        }
+      }
+
+      &__loading {
+        @extend %flex-center;
+        margin-top: 20px;
+        height: 50px;
+        overflow: hidden;
+      }
+
+      &__empty {
+        @extend %font-14-regular;
+        color: $dark-gray;
+      }
+    }
+  }
+}

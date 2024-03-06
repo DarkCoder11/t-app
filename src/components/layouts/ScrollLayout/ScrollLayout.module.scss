@@ -1,0 +1,7 @@
+.container {
+  @extend %scrollbar;
+
+  padding: 10px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}

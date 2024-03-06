@@ -1,0 +1,65 @@
+.container {
+  @extend %flex-between;
+  background-color: $white;
+  box-shadow: 0px 0px 10px 0px #0000001a;
+  max-width: fit-content;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+
+  @include breakpoint(tablet) {
+    box-shadow: none;
+  }
+
+  &__img {
+    @extend %flex-center;
+    max-width: 70px;
+    width: 100%;
+    height: 70px;
+
+    @include breakpoint(tablet) {
+      display: none;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__info {
+    @extend %flex-column;
+    gap: 5px;
+    flex: 1;
+    padding: 15px;
+    max-width: 170px;
+    border-radius: 0 10px 10px 0;
+    background-color: $white;
+
+    @include breakpoint(tablet) {
+      max-width: 100%;
+      border-radius: 4px;
+      padding: 5px;
+    }
+
+    &_active {
+      background-color: $light-gray;
+    }
+
+    &__name {
+      @extend %font-14-semibold;
+      @extend %text-ellipsis;
+      line-height: 17px;
+    }
+
+    &__email {
+      @extend %font-16-regular;
+      @extend %text-ellipsis;
+
+      line-height: 17px;
+
+      @include breakpoint(tablet) {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+.wrapper__container {
+  @extend %flex-center;
+  background: url('../../assets/images/backError.webp');
+  position: absolute;
+  height: 100dvh;
+  width: 100%;
+  background-color: $burgundyRed;
+
+  @include breakpoint(tablet-l) {
+    padding: 0 20px;
+  }
+
+  &__content {
+    @extend %flex-center-column;
+    text-align: center;
+
+    &__link {
+      position: relative;
+      cursor: pointer;
+      display: inline-block;
+      padding: 10px 25px;
+      background-color: $white;
+      color: $red;
+      text-decoration: none;
+      margin-top: 25px;
+      border-radius: 25px;
+      border-bottom: 4px solid $red;
+    }
+
+    &__description {
+      color: $white !important;
+      font-size: 19.2px;
+      max-width: 600px;
+
+      @include breakpoint(tablet-l) {
+        font-size: 16px;
+      }
+    }
+
+    h2 {
+      font-size: 18rem;
+      color: $white;
+      line-height: 1em;
+
+      @include breakpoint(tablet-l) {
+        font-size: 12rem;
+      }
+
+      @include breakpoint(tablet-l) {
+        font-size: 8rem;
+      }
+    }
+
+    h4 {
+      position: relative;
+      border-radius: 20px;
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: $black;
+      background: $white;
+      padding: 10px 20px;
+      display: inline-block;
+
+      @include breakpoint(tablet-l) {
+        font-size: 16px;
+      }
+    }
+  }
+}

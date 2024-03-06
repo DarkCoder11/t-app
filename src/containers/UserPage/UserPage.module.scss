@@ -1,0 +1,45 @@
+.container {
+  @extend %flex-justify-between;
+  gap: 61px;
+  position: relative;
+  height: 100%;
+
+  overflow-y: auto;
+
+  @extend %scrollbar;
+
+  @include breakpoint(wide) {
+    flex-direction: column;
+  }
+
+  @include breakpoint(tablet) {
+    gap: 20px;
+  }
+
+  &__img {
+    max-width: 424px;
+    width: 100%;
+  }
+
+  &__loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__info {
+    @extend %flex-column;
+    gap: 10px;
+    flex: 1;
+    padding-bottom: 20px;
+
+    &__name {
+      @extend %font-16-semibold;
+    }
+
+    &__description {
+      margin-top: 10px;
+    }
+  }
+}

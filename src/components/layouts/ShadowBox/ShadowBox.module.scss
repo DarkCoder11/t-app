@@ -1,0 +1,19 @@
+.container {
+  @extend %flex-justify-between;
+
+  overflow: hidden;
+  box-shadow: 0px 0px 10px 0px $black-shadow;
+  height: calc(100vh - 100px - 39px - 26px - 20px);
+
+  @include breakpoint(tablet) {
+    flex-direction: column;
+  }
+
+  &__navbar {
+    max-width: 315px;
+
+    @include breakpoint(tablet) {
+      max-width: 100%;
+    }
+  }
+}

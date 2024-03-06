@@ -1,0 +1,22 @@
+.container {
+  @extend %flex-between;
+
+  margin-bottom: 26px;
+
+  @include breakpoint(mobile) {
+    flex-direction: column;
+  }
+
+  &__title {
+    @extend %font-32-bold;
+
+    color: $red;
+    max-width: 200px !important;
+  }
+
+  &__subtitle {
+    @extend %font-16-regular;
+
+    max-width: 200px !important;
+  }
+}

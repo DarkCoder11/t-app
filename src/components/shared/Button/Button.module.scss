@@ -1,0 +1,16 @@
+.button {
+  background-color: transparent;
+  padding: 5px;
+
+  &--primary {
+    background-color: $red;
+    color: $white;
+    border-radius: 4px;
+  }
+
+  &--secondary {
+    background-color: $black;
+    color: $white;
+    border-radius: 4px;
+  }
+}

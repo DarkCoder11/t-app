@@ -1,0 +1,10 @@
+.container {
+  @extend %flex-center;
+  height: 100%;
+
+  &__title {
+    @extend %font-14-regular;
+    line-height: 17px;
+    color: $dark-gray;
+  }
+}

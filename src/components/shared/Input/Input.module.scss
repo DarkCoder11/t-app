@@ -1,0 +1,11 @@
+.input {
+  @extend %font-14-regular;
+  line-height: 17px;
+  padding: 13px 24px;
+  border-radius: 8px;
+  border: 1.5px solid $gray;
+
+  &::placeholder {
+    color: $dark-gray;
+  }
+}
