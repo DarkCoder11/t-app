@@ -11,18 +11,6 @@
 - UI: SCSS Modules
 - Linting: ESLint, Prettier
 
-## 🗂 Folder Structure
-
-```
-src
-├── assets
-├── components
-├── constants
-├── containers
-└── styles
-└── types
-```
-
 ## ➕ Installation and Setup Instructions
 
 #### Example:
